@@ -400,6 +400,29 @@
             "responses": [
                 "I was made in 2020, if that's what you are asking!"
             ]
+        },
+        {
+            "tag": "study_tips",
+            "patterns": [
+                "Give me study tips",
+                "How should I study",
+                "How can I study better",
+                "Tips for studying effectively",
+                "I need help studying",
+                "How do I focus while studying",
+                "Best way to prepare for exams",
+                "Study advice",
+                "How can I remember what I study",
+                "Help me make a study plan"
+            ],
+            "responses": [
+                "Study in short focused sessions: try 25 minutes of study followed by a 5 minute break. After each session, write down what you learned in your own words.",
+                "Start with the hardest topic while your mind is fresh, practice with questions or code instead of only reading, and review the same topic again the next day.",
+                "Make a small plan before you start: choose one topic, one resource, and one practice task. Finishing one clear task is better than jumping between many topics."
+            ],
+            "context": [
+                ""
+            ]
         }
     ]
 }
