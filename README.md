@@ -36,3 +36,23 @@ Ted is now ready to chat!
 
 ##### Copyright (c) 2020 Karan-Malik
 
+## My Changes in This Fork
+
+This fork is based on **Ted, The Deep-Learning Chatbot**, originally created by [Karan Malik](https://github.com/Karan-Malik). The original MIT License is preserved.
+
+### My change
+
+I added a new `study_tips` intent to `chatbot_codes/intents.json`, with:
+
+- 10 example patterns, such as “Give me study tips” and “Help me make a study plan”
+- 3 practical responses about focused study sessions, active practice, and making a simple study plan
+
+### What I am learning from this change
+
+- How a chatbot organizes training examples by intent
+- How patterns and responses are stored in JSON
+- Why changing the training data means the model must be retrained before it can use the new intent
+
+### Retraining note
+
+The saved model files must be regenerated and tested before the running chatbot can answer the new study-tips patterns. This section will be updated after that test passes.
