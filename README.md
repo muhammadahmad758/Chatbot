@@ -53,6 +53,8 @@ I added a new `study_tips` intent to `chatbot_codes/intents.json`, with:
 - How patterns and responses are stored in JSON
 - Why changing the training data means the model must be retrained before it can use the new intent
 
-### Retraining note
+### Retraining — done
 
-The saved model files must be regenerated and tested before the running chatbot can answer the new study-tips patterns. This section will be updated after that test passes.
+I retrained the model with the new intent using `chatbot_codes/train_model.py`, a focused script that keeps the original preprocessing and network architecture (the original `full_code.py` mixes training with unrelated services). The regenerated `words.pkl`, `classes.pkl`, and `mymodel.h5` are included in this fork.
+
+Test result after retraining: the reloaded model classified **122 of 123** training patterns correctly, including **all 10 study-tips patterns**. The one miss, “How are you”, exists in the original data with two different labels (`greeting` and `whatsup`), so both cannot be satisfied at once.
